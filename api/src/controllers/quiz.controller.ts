@@ -47,7 +47,7 @@ export const getRank = async (_req: Request, res: Response): Promise<void> => {
         const data: IData = await fetchDB();
         const scoreList = data.scoresList.sort((a: number, b: number) => a - b);
         const IDX = binarySearch(score, scoreList);
-        const rank = Math.floor(IDX / scoreList.length * 100);
+        const rank = (IDX / scoreList.length * 100).toFixed(2);
         res.json({
             'rank': rank
         })
