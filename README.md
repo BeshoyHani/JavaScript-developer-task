@@ -39,7 +39,7 @@ set of words according to their part of speech.
 - Your rank among other users will be displayed.
 
 ## Preview
-<img src="./images/home.png">
+<img src="./images/Home.png">
 <img src="./images/CA.png">
 <img src="./images/WA.png">
 <img src="./images/rank.png">
