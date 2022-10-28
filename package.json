@@ -6,7 +6,8 @@
       "start:api": "cd api && npm run build && node dist/index.js",
       "start:frontend": "cd frontend && npm run start",
       "build:api": "cd api && npm run build",
-      "build:frontend": "cd frontend && react-scripts build"
+      "build:frontend": "cd frontend && react-scripts build",
+      "install": "cd api && npm i && cd ../frontend && npm i"
     },
     "author": "Beshoy Hani",
     "license": "ISC"
