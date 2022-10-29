@@ -27,7 +27,7 @@ set of words according to their part of speech.
 ## Scripts
 | Command  | Action |
 | ------------- | ------------- |
-| `npm run start:api`  | start the Node.js server om port 3000 |
+| `npm run start:api`  | start the Node.js server on port 3000 |
 | `npm run start:frontend`  | start the frontend server on port 4000|
 | `npm run build:api`  | build the server-side code and generate js code inside `dist` folder|
 | `npm run build:frontend`  | build the client-side code|
