@@ -7,7 +7,8 @@ set of words according to their part of speech.
 2) [How to Setup](#how-to-setup)
 3) [Scripts to Run](#scripts)
 4) [How it Works](#how-it-works)
-5) [Preview](#preview)
+5) [Endpoints](./api/README.md/#endpoints)
+6) [Preview](#preview)
 
 ## Tools
 - Frontend
