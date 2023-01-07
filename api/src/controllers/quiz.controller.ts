@@ -27,7 +27,11 @@ export const getXWords = async (_req: Request, res: Response): Promise<void> => 
         const data: IData = await fetchDB();
         const startIDX = Math.floor(Math.random() * 5); // Generate a number between 0 and 4 to start take the 10 words from
         let wordsArray = data.wordList.splice(startIDX, 9); // Take 9 words start from the generated random position
-        wordsArray.push(data.wordList[data.wordList.length - 1]); // Take last word to make sure that the 4 categories alwayes exist
+        // currently, we have 3 categories in the arraty, the missing one is the adjective word        
+        // the test file has 2 adjective words one at the first position and the other at the last
+        // so we use a dummy condition to randomize the choice between them
+        const adjWord = startIDX <= 2 ? data.wordList[0] : data.wordList[data.wordList.length - 1];
+        wordsArray.splice(startIDX, 0,  adjWord); // use random number generated before to randomize the adj word position in array
         const words = JSON.parse(JSON.stringify(wordsArray));
         res.status(200).json(words);
     } catch (error) {

@@ -15,6 +15,7 @@ export default function RankBoard({ score }) {
         async function getClientRank() {
             const res = await getRank(score);
             setRank(res);
+
         }
         getClientRank();
     }, [score])
